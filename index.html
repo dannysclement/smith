@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css" />
+  <script type="module" src="index.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white w-full max-w-md rounded-sm shadow-sm">
+    <header class="border-b border-gray-300 py-6 text-center">
+      <h1 class="text-lg font-normal">LOGIN</h1>
+    </header>
+    <form class="p-6" id="login-form">
+      <label for="email-or-username" class="block mb-2 text-gray-700 text-base font-normal">Email or Username</label>
+      <input
+        id="email-or-username"
+        type="text"
+        class="w-full border border-gray-300 rounded-sm px-3 py-2 mb-6 text-base font-normal text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
+        required
+      />
+      <label for="password" class="block mb-2 text-gray-700 text-base font-normal">Password</label>
+      <input
+        id="password"
+        type="password"
+        class="w-full border border-gray-300 rounded-sm px-3 py-2 mb-6 text-base font-normal text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
+        required
+      />
+      <div class="flex justify-center mb-6">
+        <button
+          type="submit"
+          class="bg-black text-white text-sm tracking-widest px-8 py-2 uppercase"
+        >
+          Sign In
+        </button>
+      </div>
+      <div class="text-center text-gray-600 text-sm font-normal">
+        Forgot your password? <span class="mx-2">|</span> 
+        <a href="#" id="create-account" class="text-black hover:underline">Create account</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
